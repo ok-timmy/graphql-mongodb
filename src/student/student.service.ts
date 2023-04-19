@@ -40,8 +40,8 @@ export class StudentService {
     return this.studentRepository.find({
       where: {
         id: {
-          $in: studentIds 
-        },
+          $in: studentIds,
+        } as any,
       },
     });
   }
